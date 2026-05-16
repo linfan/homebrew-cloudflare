@@ -54,7 +54,7 @@ class Curl < Formula
   end
 
   resource "quiche" do
-    url "https://github.com/cloudflare/quiche.git", branch: "master"
+    url "https://github.com/cloudflare/quiche.git", tag: "0.22.0"
   end
 
   def install
