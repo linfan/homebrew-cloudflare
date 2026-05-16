@@ -36,7 +36,6 @@ class Curl < Formula
   keg_only :provided_by_macos
 
   depends_on "cmake" => :build
-  depends_on "rust" => :build
 
   depends_on "pkgconf" => [:build, :test]
   depends_on "brotli"
@@ -54,7 +53,7 @@ class Curl < Formula
   end
 
   resource "quiche" do
-    url "https://github.com/cloudflare/quiche.git", tag: "0.22.0"
+    url "https://github.com/cloudflare/quiche.git", branch: "master"
   end
 
   def install
